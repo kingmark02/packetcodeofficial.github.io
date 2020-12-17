@@ -1,0 +1,359 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: radial-gradient(circle closest-corner at center 125px,#222,black 40%) no-repeat;
+    color:#fff;
+  }
+.top-nav-bar {
+    height: 57px;
+    top: 0;
+    position: sticky;
+    background: #000;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+    z-index: 2;
+}
+.logo {
+    height: 40px;
+    margin: 5px 10px;
+}
+.form-control {
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid #fff !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+}
+.input-group-text {
+    background: #555!important;
+    border: 1px solid #fff !important;
+    margin: 8.5px 10px 3px 0 !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+.search-box {
+    display: inline-flex;
+    width: 60%;
+}
+.fa-search {
+    color: #fff;
+}
+.menu-bar {
+    width: 40%;
+    height: 57px;
+    float: right;
+}
+.menu-bar ul {
+    display: inline-flex;
+    float: right;
+}
+.menu-bar ul li {
+    list-style-type: none;
+    padding: 10px 25px;
+    text-align: center;
+    background-color: black;
+    cursor: pointer;
+}
+.menu-bar ul li a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.fa-shopping-cart {
+    margin-right: 10px;
+}
+.fa-sign-in {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 980px)
+{
+    .top-nav-bar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box {
+        width: 100%;
+    }
+    .menu-bar {
+        width: 100%;
+    }
+    .menu-bar ul {
+        margin: 10px 0;
+        width: 100%
+    }
+    .menu-bar ul li {
+        height: 57px;
+        width: 100%;
+    }
+}
+#menu-btn, #close-btn {
+    font-size: 30px;
+    margin: 10px;
+    color: #fff;
+    display: none;
+}
+
+
+/*-----------------------Side-menu css-----------------------------*/
+.side-menu h1 {
+    font-size: 15px;
+    margin-left: 1px;
+    color: #fff;
+}
+.side-menu {
+    height: 44%;
+    width: 15%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: black;
+}
+.side-menu ul {
+    margin-left: 10px;
+    color: #fff;
+}
+.side-menu ul li {
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.side-menu ul li:hover {
+    color: #555;
+}
+.side-menu ul li ul {
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-menu ul li:hover ul {
+    display: block;
+    height: 147px;
+    margin-left: 14%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: black;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
+@media only screen and (max-width: 980px)
+{
+    .side-menu {
+        width: 34%;
+        z-index: 20;
+        top: 133px;
+        position: fixed;
+        font-size: 12px;
+        display: none;
+    }
+    .side-menu ul li ul {
+        top: 133px;
+    }
+    .side-menu ul li:hover ul {
+        margin-left: 32%;
+    }
+    #menu-btn {
+        display: block;
+    }
+}
+
+
+/*-----------------------Slider css-----------------------------*/
+.slider {
+    width: 85%;
+    margin-left: 15%;
+    padding: 0 10px;
+}
+.carousel {
+    box-shadow: 1px 1px 4px 1px rgba(155, 150, 150, 0.5);
+}
+.carousel-indicators {
+    z-index: 1 !important;
+}
+@media only screen and (max-width: 980px)
+{
+    .slider {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/*-----------------------Categories-----------------------------*/
+.categories {
+    margin: 20px 0;
+}
+.categories img {
+    width: 100%;
+    padding: 5px 0;
+    transition: 1s;
+    cursor: pointer;
+}
+.categories img:hover {
+    transform: scale(1.1);
+}
+
+
+/*-----------------------top selling-----------------------------*/
+.title-box {
+    background: #cf7309 ;
+    color: whitesmoke;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.fa-star-half-o {
+    color: #cf7309;
+}
+.title-box h2 {
+    font-size: 24px;
+}
+
+.fa-star {
+    color: #cf7309;
+}
+
+/*-----------------------product-top-----------------------------*/
+.product-top img {
+    width: 100%
+}
+.overlay-right {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+.overlay-right .fa {
+    cursor: pointer;
+    background-color: transparent;
+    color: orange;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.overlay-right .btn-secondary {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important; 
+}
+.product-top:hover .overlay-right {
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+/*-----------------------product-bottom-----------------------------*/
+.product-bottom h3 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.product-bottom h5 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+.popular {
+    margin: 50px 0;
+}
+
+
+/*-----------------------Footer-----------------------------*/
+
+.footer {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    background-color: #050505;
+}
+.footer h1 {
+    color: #fff;
+    font-size: 16px;
+    margin: 25px 0;
+}
+.footer p {
+    font-size: 12px;
+}
+.footer-image img {
+    width: 150px;
+}
+.footer .row {
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+/*-----------------------new-item-----------------------------*/
+
+.product {
+    margin-top: 70px;
+}
+.col-md-7 h2 {
+    color: #fff;
+}
+.ratings {
+    color: #fff;
+    font-weight: bold;
+}
+.price {
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+}
+.product input {
+    border: 1px solid #555;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 50px;
+    font-size: 12px;
+}
+.product label {
+    font-weight: bold;
+}
+.container .btn-primary {
+    background: #555;
+    color: #000;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+input {
+    background: #555;
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+label {
+    color: #fff;
+}
+
+/*-------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
